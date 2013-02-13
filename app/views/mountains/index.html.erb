@@ -1,0 +1,15 @@
+List of mountains
+<br>
+<br>
+
+<% @mountains.each do |mountain| %>
+  <br>
+  Name: <%= link_to( mountain.name, mountain_path(mountain.id)) %>
+  <br>
+  Height: <%= number_with_delimiter(mountain.height) %>
+  <br>
+  <%= link_to("edit", mountain_edit_path(mountain.id)) %>
+  <br>
+  <%= button_to "Delete", mountain_delete_path(mountain.id) %>
+
+<% end %>

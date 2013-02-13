@@ -1,0 +1,10 @@
+This app will just do mountains. No oceans.
+
+so... things that I care about in mountains
+
+name
+height (ft)
+image
+continent
+range
+timestamp
